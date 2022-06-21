@@ -1,0 +1,45 @@
+.nav-bar {
+    background-color: #1d1d1d;
+    color: #e0e0e0;
+    padding: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.nav-bar nav a {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.nav-bar nav a:hover {
+    color: #838383;
+}
+
+.active {
+    color: #838383;
+}
+
+.nav-logo {
+    font-size: 1.2em;
+    color: #e0e0e0;
+    text-decoration: none;
+}
+
+.logo-blog {
+    font-weight: bold;
+}
