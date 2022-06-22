@@ -55,6 +55,7 @@ label span {
 }
 
 input, textarea {
+  background-color: #e6e6e6;
   box-sizing: border-box;
   border: none;
   border-bottom: 1px solid #cccccc;
@@ -112,9 +113,9 @@ button[disabled] {
 }
 
 .container .error {
-  color: tomato;
-  background-color: #fa9583;
-  border: 1px solid #ff7860;
-  padding: 5px;
+  color: #c70000;
+  background-color: #f89f9f;
+  border: 1px solid #ff6969;
+  padding: .3em 3em;
   border-radius: 5px;
 }
