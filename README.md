@@ -2,6 +2,8 @@
 
 💻 Example of a blog application with React and Firebase.
 
+![register-page](https://user-images.githubusercontent.com/42656077/175040380-e210b672-106c-4c40-aa70-f03b430c8a7c.png)
+
 ### What is being used here?
 ▶ React Router Dom
 ▶ Hooks
