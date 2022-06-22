@@ -1,7 +1,7 @@
-.nav-bar {
-    background-color: #1d1d1d;
+.navBar {
+    background-color: #333642;
     color: #e0e0e0;
-    padding: 2em;
+    padding: 1em 2em;
     margin-bottom: 2em;
     display: flex;
     flex-direction: row;
@@ -10,14 +10,14 @@
     align-items: center;
 }
 
-.nav-bar nav {
+.navBar nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 2em;
 }
 
-.nav-bar nav a {
+.navBar nav a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -26,20 +26,20 @@
     text-decoration: none;
 }
 
-.nav-bar nav a:hover {
+.navBar nav a:hover {
     color: #838383;
 }
 
-.active {
-    color: #838383;
-}
-
-.nav-logo {
+.navLogo {
     font-size: 1.2em;
     color: #e0e0e0;
     text-decoration: none;
 }
 
-.logo-blog {
+.logoBlog {
     font-weight: bold;
+}
+
+.active {
+    text-shadow: 0 0 3px #b1b1b1;
 }
