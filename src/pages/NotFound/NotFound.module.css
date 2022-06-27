@@ -1,0 +1,17 @@
+.notFound {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.notFound h2 {
+    color: #1f1f1f;
+}
+
+.notFound a {
+    display: block;
+    margin-top: 15px;
+    padding: 10px 15px;
+}
