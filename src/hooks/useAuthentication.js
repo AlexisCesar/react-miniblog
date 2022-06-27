@@ -31,7 +31,7 @@ export const useAuthentication = () => {
             const { user } = await createUserWithEmailAndPassword(auth, data.email, data.password);
 
             await updateProfile(user, { displayName: data.displayName });
-            
+
             setLoading(false);
 
             return user;
@@ -39,7 +39,7 @@ export const useAuthentication = () => {
         } catch (error) {
             let systemErrorMessage;
 
-            if(error.message.includes("Password")) {
+            if (error.message.includes("Password")) {
                 systemErrorMessage = "Password must contains 6 or more characters.";
             } else if (error.message.includes("email-already")) {
                 systemErrorMessage = "E-mail already in use.";
@@ -54,15 +54,42 @@ export const useAuthentication = () => {
 
     };
 
-    const logOut = async () => {
+    const logOut = () => {
         checkIfIsCancelled();
         signOut(auth);
     };
+
+    const logIn = async (data) => {
+        checkIfIsCancelled();
+
+        setLoading(true);
+        setError(false);
+
+        try {
+            await signInWithEmailAndPassword(auth, data.email, data.password);
+
+            setLoading(false);
+        } catch (error) {
+            let systemErrorMessage;
+
+            if (error.message.includes("user-not-found")) {
+                systemErrorMessage = "User not found.";
+            } else if (error.message.includes("wrong-password")) {
+                systemErrorMessage = "Wrong password.";
+            } else {
+                systemErrorMessage = "Something went wrong, please try again later.";
+            }
+
+            setError(systemErrorMessage);
+
+            setLoading(false);
+        }
+    }
 
     useEffect(() => {
         return () => setCancelled(true);
     }, []);
 
-    return { auth, createUser, logOut, error, loading };
+    return { auth, createUser, logIn, logOut, error, loading };
 
 };
