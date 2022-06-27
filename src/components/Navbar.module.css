@@ -43,3 +43,7 @@
 .active {
     text-shadow: 0 0 3px #b1b1b1;
 }
+
+.signOut {
+    color: #e0e0e0;
+}
