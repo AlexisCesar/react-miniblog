@@ -2,8 +2,13 @@
     margin-bottom: 2em;
 }
 
+.postDetail a {
+    padding: 10px 15px;
+}
+
 .postDetail img {
     max-width: 600px;
+    margin-bottom: 1em;
 }
 
 .postDetail h2 {

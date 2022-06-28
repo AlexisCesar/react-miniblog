@@ -1,4 +1,4 @@
-.home {
+.searchContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -6,22 +6,17 @@
     text-align: center;
 }
 
-.home button {
+.searchContainer a {
     margin-top: 15px;
     padding: 10px 15px;
 }
 
-.searchForm {
-    max-width: 100%;
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2em;
+.searchContainer h1 {
+    margin-bottom: 1em;
 }
 
-.searchForm input {
-    margin-right: 10px;
-    width: 50%;
+.searchContainer p {
+    margin-bottom: 30px;
 }
 
 .noPosts {
