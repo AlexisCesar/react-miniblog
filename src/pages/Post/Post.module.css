@@ -11,6 +11,11 @@
     justify-content: center;
 }
 
+.postContainer img {
+    max-width: 600px;
+    margin-bottom: 1em;
+}
+
 .tags p {
     margin-right: 1em;
 }

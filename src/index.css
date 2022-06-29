@@ -71,7 +71,7 @@ input, textarea {
   width: 120px;
   font-weight: bold;
   border: none;
-  padding: .3em;
+  padding: 10px 15px;
   transition: .4s;
   font-size: .8em;
 }
