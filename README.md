@@ -1,6 +1,6 @@
 # MiniBlog
 <div align="center">
-<img src="https://user-images.githubusercontent.com/42656077/176460070-dfe16a02-fac3-4136-89e4-f394cfa37054.gif" width="5%"/>
+<img src="https://user-images.githubusercontent.com/42656077/176460070-dfe16a02-fac3-4136-89e4-f394cfa37054.gif" width="20%"/>
 <p>💻 Example of a blog application with React and Firebase.</p>
 </div>
 
